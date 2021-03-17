@@ -42,7 +42,7 @@ namespace Terminal_v._2
         static async Task Main(string[] args)
         {
 
-            Comunicator.ListPorts();
+            //Comunicator.ListPorts();
 
             while (true)
             {
