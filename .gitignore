@@ -2,5 +2,4 @@ bin
 obj
 bin/Debug/
 bin/*
-
-
+/bin
