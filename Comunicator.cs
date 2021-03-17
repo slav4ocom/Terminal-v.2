@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO.Ports;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -83,6 +84,13 @@ namespace Terminal
             }
         }
 
+        public static void ListPorts()
+        {
+            var portsList = SerialPort.GetPortNames();
+
+            Console.WriteLine("Available ports:");
+            portsList.ToList().ForEach(Console.WriteLine);
+        }
 
 
     }

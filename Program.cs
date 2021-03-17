@@ -41,6 +41,9 @@ namespace Terminal_v._2
 
         static async Task Main(string[] args)
         {
+
+            Comunicator.ListPorts();
+
             while (true)
             {
                 Comunicator.ConfigurePort();
